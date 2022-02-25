@@ -1,3 +1,5 @@
+/* /main section */
+
 .main-section {
     padding: 15rem 0 10rem 0;
     display: flex;
@@ -6,7 +8,7 @@
 }
 
 .main-section > div {
-    flex: 1; /* 2 qismi ham bir hil joy egallashi uchun */
+    flex: 1;
 }
 
 .main-section__image img {
@@ -28,10 +30,17 @@
     line-height: 1.69rem;
 }
 
+.main-section__title { 
+    text-align: start;
+    margin: 0 0 1rem 0;
+}
 
 .main__action {
     margin-top: 0.8rem;
 }
+
+/* main section */
+
 
 /* Instruction section */
 
@@ -77,6 +86,7 @@
 
 /* /Instruction section */
 
+
 /* AR portfolio section */
 .ar-portfolio {
     padding: 6rem 0;
@@ -117,6 +127,7 @@
     /* /AR portfolio section slider */
 
 /* /AR portfolio section */
+
 
 /* Services section */
 
@@ -177,7 +188,7 @@
 
 .services-about__text {
     text-align: center;
-    padding-bottom: 30px;
+    padding: 40px 0 60px 0;
 }
 
 .services-about__text h6 {
@@ -192,18 +203,19 @@
 
 /* /Services section */
 
-/* Contact section */
 
-.contact {
-    padding: 5rem 0;
+/* Location section */
+
+.location {
+    padding: 7rem 0;
 }
 
-.contact__title {
+.location__title {
     text-align: center;
     padding-bottom: 3rem;
 }
 
-.contact-map {
+.location-map {
     width: 90%;
     text-align: center;
     margin: 0 auto;
@@ -211,7 +223,7 @@
     border-radius: 15px;
 }
 
-.contact-map iframe {
+.location-map iframe {
     width: 100%;
     height: 450px;
     border-radius: 15px;
@@ -220,31 +232,225 @@
     box-shadow: 0px 0px 26px -2px rgba(34, 60, 80, 0.17);
 }
 
-.contact-section {
+.location-section {
     display: flex;
     list-style: none;
     justify-content: center;
     padding: 5rem 0;
 }
 
-.contact-section__items i {
+.location-section__items i {
     padding: 0 45px;
     width: 30px;
     color: black;
 }
 
-.contact-section__items a {
+.location-section__items a {
     display: flex;
     font-size: 26px;
-    margin: 21px 21px;
+    margin: 10px 10px;
     text-decoration: none;
     align-items: center;
-    
     color: #002d64;
 }
 
-.contact-section__items a:hover {
+.location-section__items a:hover {
     color: #0062DB;
 }
 
+/* /Location section */
+
+
+/* Contact section */
+
+.contact {
+    background-color: #EDF4FF;
+}
+
+.contact-section {
+    padding: 6rem 0;
+}
+
+.contact-section__title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.contact-form > div {
+    flex: 1;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-radius: 15px;
+}
+
+.contact-form__items {
+    background-color: #FBFBFB;
+    display: block;
+    align-items: center;
+    border: none;
+    border-radius: 15px;
+    margin: 0 10px 0 0;
+}
+
+.contact-form__items form {
+    margin: 3rem 0;
+}
+
+.contact-register {
+    background-color: #FBFBFB;
+    border: none;
+    border-radius: 15px;
+    margin: 0 0 0 10px;
+}
+
+.contact-form__items .contact-form__item {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form__items .contact-form__item label {
+    width: 200px;
+}
+
+.contact-form__item input {
+    width: 280px;
+    height: 40px;
+    padding: 0.87rem;
+    margin: 0.625rem 1rem;
+    border: 1px solid #f0e9ff;
+    border-radius: 5px;
+    padding-left: 1.12rem;
+    font-size: 0.81rem;
+    background: transparent;
+    color: #495057;
+    box-sizing: border-box;
+}
+
+.contact-form__item label {
+    font-size: 20px;
+}
+
+.contact-form__item label:focus,
+.contact-form__item input:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: none;
+}
+
+.contact-register {
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.contact-register__title {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 1.7rem;
+}
+
+.contact-register__socials {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-register__social {
+    display: flex;
+    margin: 2rem 0;
+    transition: all 0.2s ease-in-out;
+    align-items: center;
+    padding: 0.8rem 1.6rem;
+    cursor: pointer;
+    background-color: white;
+    color: #000000;
+    border: 1px solid rgb(215, 220, 255);
+    transition: all 0.2s ease-in-out;
+}
+
+.contact-register__social a {
+    text-decoration: none;
+    margin: 0 20px 0 0;
+}
+
+.contact-register__social img{
+    width: 40px;
+}
+
+.contact-register__social:hover {
+    border: 1px solid white;
+    -webkit-box-shadow: 5px 5px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 5px 5px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 5px 5px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.contact-register__social i {
+    font-size: 2rem;
+    align-items: center;
+    padding: 0 1.2rem 0 0;
+}
+
+.contact-register p {
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.contact-register hr {
+    opacity: 0.2;
+}
+
 /* /Contact section */
+
+@media only screen and (max-width: 991px) {
+    /* Main secion */
+    .main-section {
+        display: block;
+        text-align: center;
+        padding: 9rem;
+    }
+
+    .main-section__info p {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .main-section__title {
+        text-align: center;
+    } 
+    
+    .main-section > div {
+        width: 100%;
+    }
+
+    /* Instruction section */
+    .instruction-section__main {
+        display: block;
+        text-align: center;
+    }
+
+    .instruction-section__image img {
+        width: 60%;
+    }
+
+    .section-subtitle {
+        text-align: center;
+        left: -50px;
+    }
+
+    .instruction-section__iframe iframe {
+        text-align: center;
+    }
+
+    .instruction-section__title {
+        text-align: center;
+    }
+}

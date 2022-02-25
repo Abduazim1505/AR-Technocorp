@@ -214,11 +214,14 @@
     font-display: swap;
 }
 
+/* Core styles */
+
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-/* Core styles */
 html{
     scroll-behavior: smooth;
 }
@@ -233,7 +236,7 @@ a {
 }
 
 .container {
-    max-width: 1250px; /* 1320px */
+    width: 1250px; /* 1320px */
     margin: 0 auto;
 }
 
@@ -243,7 +246,6 @@ a {
 
 .section-title {
     margin-top: 0.32rem;
-    margin-bottom: 1.5rem;
     font-size: 2.5rem;
     font-weight: bold;
     text-transform: capitalize;
@@ -283,14 +285,14 @@ a {
     left: 0;
     width: 100%;
     background-color: #EDF4FF;
-    box-shadow: 0px 3px 16px 0px rgb(0 0 0 / 10%); /* qolsa bo'luradi */
+    box-shadow: 0px 3px 16px 0px rgb(0 0 0 / 10%);
     z-index: 10;
 }
 
 .main-header .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 80px;
 }
 
@@ -338,8 +340,103 @@ a {
 .main-social__item {
     display: inline-block;
     text-align: center;
-    font-size: 21px;
-    margin-left: 21px;
+    margin-left: 10px;
+}
+
+.main-social__item img {
+    width: 21px;
+    height: 21px;
 }
 
 /* /Main header styles */
+
+/* Footer section */
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #333333;
+}
+
+.footer-section h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #333333;
+    padding: 0 0 20px 0;
+}
+
+.footer-section h5 {
+    font-size: 0.8rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #5c5c5c;
+    padding: 0 0 15px 0;
+}
+
+.footer__services h4,
+.footer__services h5,
+.footer__about h4,
+.footer__about h5 {
+    cursor: pointer;
+}
+
+.footer__about h5:hover {
+    color: #003064;
+}
+
+.footer__services h5:hover {
+    color: #003064;
+}
+
+.footer__socials {
+    display: inline-block;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.footer__socials img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer__socials a {
+    text-decoration: none;
+    margin: 0 20px 0 0;
+}
+
+.topNubex img {
+    position: absolute;
+    width: 30px;
+    transition: all 0.2s ease-in-out;
+}
+
+.topNubex img:hover {
+    position: absolute;
+    width: 40px;
+}
+
+/* Footer section */
+
+@media only screen and (max-width: 991px) {
+    .container {
+        width: 95%;
+    }
+
+    /* Navigation */
+    .main-navigation {
+        display: none;
+        margin: 0 100px;
+    }
+
+    .main-header .container {
+        justify-content: space-between;
+    }
+}
