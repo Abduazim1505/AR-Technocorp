@@ -1,0 +1,250 @@
+.main-section {
+    padding: 15rem 0 10rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-section > div {
+    flex: 1; /* 2 qismi ham bir hil joy egallashi uchun */
+}
+
+.main-section__image img {
+    width: 90%;
+}
+
+.main-section__info p {
+    width: 90%;
+}
+
+.main-section__info {
+    align-items: center;
+}
+
+.main__description {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #797979;
+    line-height: 1.69rem;
+}
+
+
+.main__action {
+    margin-top: 0.8rem;
+}
+
+/* Instruction section */
+
+.instruction {
+    background-color: #EDF4FF;
+    padding: 7rem 0;
+}
+
+.instruction-section__main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instruction-section__image img {
+    width: 100%;
+}
+
+.instruction-section__iframe iframe {
+    width: 80%;
+    margin-left: 70px;
+}
+
+.instruction-section__main > div {
+    flex: 1;
+}
+
+.instruction-section__title {
+    text-align: center;
+}
+
+.section-subtitle {
+    position: relative;
+    margin-bottom: 0.5rem;
+    margin-top: 4rem; /* 5 / 16 = 0.32rem */
+    font-size: 1.5rem; /* 36 / 16 = 2.25rem */
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #0062DB;
+    left: 40px;
+}
+
+/* /Instruction section */
+
+/* AR portfolio section */
+.ar-portfolio {
+    padding: 6rem 0;
+}
+
+.ar-portfolio__title {
+    text-align: center;
+}
+
+    /* AR portfolio section slider */
+
+    .ar-slide-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+    }
+
+    .homeslider {
+        max-width: 90%;
+        max-height: 550px;
+        box-shadow: 0px 3px 20px 10px rgb(0 0 0 / 5%);
+        border-radius: 15px;
+    }
+
+    .slide iframe {
+        max-width: 100%;
+        max-height: 550px;
+        border-radius: 15px;
+    }
+
+    .slide video {
+        max-width: 100%;
+        max-height: 550px;
+        border-radius: 15px;
+    }
+
+    /* /AR portfolio section slider */
+
+/* /AR portfolio section */
+
+/* Services section */
+
+.services {
+    background-color: #EDF4FF;
+}
+
+.services-section {
+    padding: 7rem 0 7rem 0;
+    background-color: #EDF4FF;
+}
+
+.service-title {
+    text-align: center;
+}
+
+.services-items {
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 0 2rem 0;
+    align-items: center;
+}
+
+.services-item a {
+    border: none;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 1.3rem 2.5rem;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: all 0.2s ease-in-out;
+    background-color: white;
+    color: #0062DB;
+    border: 1px solid white;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.services-item a:hover {
+    border: 1px solid #0062DB;
+}
+
+.services-about {
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    margin-top: 80px;
+}
+
+.services-about > div {
+    align-items: center;
+}
+
+.services-about__image {
+    text-align: center;
+    padding: 70px 0 20px 0;
+}
+
+.services-about__text {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.services-about__text h6 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #0062DB;
+}
+
+.services-item.active_services a {
+    border: 1px solid #0062DB;
+}
+
+/* /Services section */
+
+/* Contact section */
+
+.contact {
+    padding: 5rem 0;
+}
+
+.contact__title {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.contact-map {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    border: 0.5px solid rgb(233, 233, 233);
+    border-radius: 15px;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 26px -2px rgba(34, 60, 80, 0.17);
+    -moz-box-shadow: 0px 0px 26px -2px rgba(34, 60, 80, 0.17);
+    box-shadow: 0px 0px 26px -2px rgba(34, 60, 80, 0.17);
+}
+
+.contact-section {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+.contact-section__items i {
+    padding: 0 45px;
+    width: 30px;
+    color: black;
+}
+
+.contact-section__items a {
+    display: flex;
+    font-size: 26px;
+    margin: 21px 21px;
+    text-decoration: none;
+    align-items: center;
+    
+    color: #002d64;
+}
+
+.contact-section__items a:hover {
+    color: #0062DB;
+}
+
+/* /Contact section */
