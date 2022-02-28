@@ -227,7 +227,7 @@ html{
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -413,13 +413,13 @@ a {
 }
 
 .topNubex img {
-    position: absolute;
+    position: static;
     width: 30px;
     transition: all 0.2s ease-in-out;
 }
 
 .topNubex img:hover {
-    position: absolute;
+    position: static;
     width: 40px;
 }
 
@@ -427,7 +427,7 @@ a {
 
 @media only screen and (max-width: 991px) {
     .container {
-        width: 95%;
+        width: 90%;
     }
 
     /* Navigation */
@@ -442,6 +442,14 @@ a {
 
     /* Navigation */
 
+    .footer {
+        background-color: none;
+    }
+
+    .footer-section {
+        justify-content: space-evenly;
+    }
+
     .topNubex img {
         position: relative;
         right: 1rem;
@@ -450,4 +458,30 @@ a {
     .section-title {
         font-size: 1.8rem;
     }
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* * */
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    /* * */
+
+    /* /Footer section */
+
+    .footer-section {
+        display: block;
+    }
+
+    .footer__socials {
+        padding-top: 0px;
+    }
+
+    .topNubex img {
+        position: sticky;
+    }
+    
+    /* /Footer section */
 }

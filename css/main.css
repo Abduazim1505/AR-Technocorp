@@ -75,6 +75,7 @@
 
 .section-subtitle {
     position: relative;
+    display: inline-block;
     margin-bottom: 0.5rem;
     margin-top: 4rem; /* 5 / 16 = 0.32rem */
     font-size: 1.5rem; /* 36 / 16 = 2.25rem */
@@ -165,6 +166,11 @@
     border: 1px solid white;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
+}
+
+.services-about__text {
+    width: 60%;
+    margin: 0 auto;
 }
 
 .services-item a:hover {
@@ -409,16 +415,18 @@
 /* /Contact section */
 
 @media only screen and (max-width: 991px) {
+  
     /* Main secion */
     .main-section {
         display: block;
         text-align: center;
-        padding: 9rem 0rem;
+        padding: 9rem 0rem 6rem 0;
     }
 
     .main-section__info p {
         text-align: center;
         margin: 0 auto;
+        padding: 1rem 0;
     }
 
     .main-section__title {
@@ -432,6 +440,9 @@
     /* Instruction section */
     .instruction {
         padding: 3rem;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
     }
 
     .instruction-section__main {
@@ -441,17 +452,12 @@
 
     .section-subtitle {
         position: static;
-        left: 0;
         padding: 0 0 1rem 0;
+        text-align: center;
     }
 
     .instruction-section__image img {
         width: 80%;
-    }
-
-    .section-subtitle {
-        text-align: center;
-        left: -50px;
     }
 
     .instruction-section__iframe iframe {
@@ -468,10 +474,31 @@
     /* Services sectiom */
 
     .services-section {
-        padding: 3rem;
+        padding: 4rem 0 5rem 0;
+    }
+
+    .services-about {
+        margin-top: 35px;
+    }
+
+    .services-items {
+        display: none;
+    }
+
+    .services-about__text {
+        width: 80%;
+        margin: 0 auto;
     }
 
     /* /Services sectiom */
+
+    /* Ar - portfolio */
+
+    .ar-portfolio {
+        padding: 2rem 0 4rem 0;
+    }
+
+    /* /Ar - portfolio */
 
     /* Location section */
 
@@ -488,12 +515,22 @@
 
     /* Contact section */
 
+    .contact {
+        background-color: none;
+    }
+
+    .contact-section {
+        padding: 3rem 0;
+    }
+
     .contact-form {
         display: block;
     }
 
     .contact-form__items {
         padding: 0.5rem 0;
+        width: 80%;
+        margin: 0 auto;
     }
 
     .contact-register__title {
@@ -504,7 +541,42 @@
         padding: 1rem 0 2rem 0;
     }
 
-    /* /Contact section */
     
+    .contact-register {
+        width: 80%;
+        margin: 0 auto;
+    }
 
+    .contact-section__title {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0 0 3rem 0;
+    }
+
+    /* /Contact section */
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* Contact section */
+
+    .contact-form__items form{
+        padding: 1rem;
+    }
+
+    .contact-form__items .contact-form__item {
+        display: block;
+    }
+
+    .contact-form__item input {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .contact-register__socials {
+        display: inline-block;
+    }
+
+    /* Contact section */
 }
