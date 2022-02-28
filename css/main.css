@@ -62,6 +62,7 @@
 .instruction-section__iframe iframe {
     width: 80%;
     margin-left: 70px;
+    border-radius: 15px;
 }
 
 .instruction-section__main > div {
@@ -304,7 +305,10 @@
     background-color: #FBFBFB;
     border: none;
     border-radius: 15px;
-    margin: 0 0 0 10px;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    
 }
 
 .contact-form__items .contact-form__item {
@@ -343,12 +347,6 @@
     border-color: #80bdff;
     outline: 0;
     box-shadow: none;
-}
-
-.contact-register {
-    text-align: center;
-    justify-content: center;
-    margin: 0 auto;
 }
 
 .contact-register__title {
@@ -415,7 +413,7 @@
     .main-section {
         display: block;
         text-align: center;
-        padding: 9rem;
+        padding: 9rem 0rem;
     }
 
     .main-section__info p {
@@ -432,13 +430,23 @@
     }
 
     /* Instruction section */
+    .instruction {
+        padding: 3rem;
+    }
+
     .instruction-section__main {
         display: block;
         text-align: center;
     }
 
+    .section-subtitle {
+        position: static;
+        left: 0;
+        padding: 0 0 1rem 0;
+    }
+
     .instruction-section__image img {
-        width: 60%;
+        width: 80%;
     }
 
     .section-subtitle {
@@ -447,10 +455,56 @@
     }
 
     .instruction-section__iframe iframe {
-        text-align: center;
+        display: flex;
+        margin: 3rem auto;
     }
 
     .instruction-section__title {
         text-align: center;
     }
+
+    /* /Instruction section */
+
+    /* Services sectiom */
+
+    .services-section {
+        padding: 3rem;
+    }
+
+    /* /Services sectiom */
+
+    /* Location section */
+
+    .location {
+        padding: 3rem;
+    }
+
+    .location-section {
+        display: block;
+        padding: 2rem 0 0 0;
+    }
+
+    /* Location section */
+
+    /* Contact section */
+
+    .contact-form {
+        display: block;
+    }
+
+    .contact-form__items {
+        padding: 0.5rem 0;
+    }
+
+    .contact-register__title {
+        padding: 2rem 0 0.5rem 0;
+    }
+
+    .contact-register p {
+        padding: 1rem 0 2rem 0;
+    }
+
+    /* /Contact section */
+    
+
 }
