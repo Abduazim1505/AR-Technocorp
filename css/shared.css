@@ -431,10 +431,6 @@ a {
     transition: all 0.2s ease-in-out;
 }
 
-.topNubex img:hover {
-    position: static;
-    width: 40px;
-}
 /* Footer section */
 
 
