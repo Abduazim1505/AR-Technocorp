@@ -8,10 +8,12 @@
         <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="./css/shared.css">
 
-        <!-- Slider section 2 -->
-        <link rel="stylesheet" type="text/css" href="./css/slick.css"> <!-- css connect -->
-        <link rel="stylesheet" type="text/css" href="./css/slick-theme.css"> <!-- css connect -->
-        <!-- /Slider section 2 -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="./css/slick.css"> <!-- Connect CSS Slider -->
+        <link rel="stylesheet" type="text/css" href="./css/slick-theme.css"> <!-- Connect CSS Slider -->
 
     </head>
     <body>
@@ -26,19 +28,19 @@
                     <nav class="main-navigation">
                         <ul class="main-navigation__items">
                             <li class="main-navigation__item">
-                                <a href="#">Asosiy</a>
+                                <a href="#main-section">Asosiy</a>
                             </li>
                             <li class="main-navigation__item">
                                 <a href="#instruction-section">Foydalanish turlari</a>
                             </li>
                             <li class="main-navigation__item">
-                                <a href="#ar-portfolio">AR loyihalar</a>
+                                <a href="#portfolio-section">AR loyihalar</a>
                             </li>
                             <li class="main-navigation__item">
-                                <a href="#services">Xizmatlar</a>
+                                <a href="#services-section">Xizmatlar</a>
                             </li>
                             <li class="main-navigation__item">
-                                <a href="#location">Bog‘lanish</a>
+                                <a href="#location-section">Bog‘lanish</a>
                             </li>
                             <li class="main-navigation__item">
                                 <a href="#contact-section">Ro‘yxatdan o‘tish</a>
@@ -75,7 +77,7 @@
 
         <!-- Main section -->
             <div class="container">
-                <section class="main-section" id="main-section">
+                <section class="main-section link" id="main-section">
                     <div class="main-section__image">
                         <img src="./images/main-section__img.png" alt="main section image">
                     </div>
@@ -95,7 +97,7 @@
         <!-- /Main section -->
 
         <!-- Instruction section -->
-            <div class="instruction" id="instruction-section">
+            <div class="instruction link" id="instruction-section">
                 <div class="container">
                     <section class="instruction-section">
                         <h3 class="section-title instruction-section__title">
@@ -118,9 +120,9 @@
             </div>
         <!-- /Instruction section -->
 
-        <!-- AR portfolio section -->
+        <!-- Portfolio section -->
             <div class="container">
-                <div class="ar-portfolio" id="ar-portfolio">
+                <div class="ar-portfolio link" id="portfolio-section">
                     <h3 class="section-title ar-portfolio__title">
                         AR LOYIHALAR
                     </h3>
@@ -129,7 +131,7 @@
                         <div class="ar-slide-container">
                             <div class="homeslider">
                                 <div class="slide__iframe">
-                                    <iframe src="https://www.youtube.com/embed/fnCmUWqKo6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+                                    <iframe src="https://www.youtube.com/embed/fnCmUWqKo6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
 
                                 <div class="slide__iframe">
@@ -157,108 +159,109 @@
                 
                 </div>
             </div>
-        <!-- /AR portfolio section -->
+        <!-- Portfolio section -->
 
         <!-- Services section -->
-        <div class="services" id="services">
-            <div class="container">
-                <div class="services-section">
-                    <div class="section-title service-title">
-                        XIZMATLAR
-                    </div>
-                    <div class="services-items tabs">
-                        <div class="services-item tab" data-tab-target="#legal">
-                            <a href="#services">YURIDIK SHAXSLAR</a>
+            <div class="services link" id="services-section">
+                <div class="container">
+                    <div class="services-section">
+                        <div class="section-title service-title">
+                            XIZMATLAR
                         </div>
-                        <div class="services-item tab" data-tab-target="#physical">
-                            <a href="#services">JISMONIY SHAXSLAR</a>
-                        </div>
-                        <div class="services-item tab" data-tab-target="#education">
-                            <a href="#services">TA’LIM BERISH</a>
-                        </div>
-                        <div class="services-item tab" data-tab-target="#frilanser">
-                            <a href="#services">FRILANSER</a>
-                        </div>
-                        <div class="services-item tab" data-tab-target="#marceting">
-                            <a href="#services">MARKETING</a>
-                        </div>
-                    </div>
-                    <div class="services-about tab-content">
-                        <div id="byDefold" data-tab-content class="services-about__items active">
-                            <div class="services-about__image">
-                                <img src="./images/services-about__img.png" alt="services img">
+                        <div class="services-items tabs">
+                            <div class="services-item tab" data-tab-target="#legal">
+                                <a href="#services">YURIDIK SHAXSLAR</a>
                             </div>
-                            <div class="services-about__text">
-                                <h6>
-                                    AR TEXNOLOGIYASIDAN FOYDALANGAN HOLDA O‘Z YAQINLARINGIZNI XAYRATDA
-                                    QOLDIRADIGAN VA TAKRORLANMAS SOVG‘ALARNI KASHF QILING VA ULARNI LOL QOLDIRING
-                                </h6>
+                            <div class="services-item tab" data-tab-target="#physical">
+                                <a href="#services">JISMONIY SHAXSLAR</a>
+                            </div>
+                            <div class="services-item tab" data-tab-target="#education">
+                                <a href="#services">TA’LIM BERISH</a>
+                            </div>
+                            <div class="services-item tab" data-tab-target="#frilanser">
+                                <a href="#services">FRILANSER</a>
+                            </div>
+                            <div class="services-item tab" data-tab-target="#marceting">
+                                <a href="#services">MARKETING</a>
                             </div>
                         </div>
-                        <div id="legal" data-tab-content class="services-about__items">
-                            <div class="services-about__image">
-                                <img src="./images/services-about__img.png" alt="services img">
+                        <div class="services-about tab-content">
+                            <div id="byDefold" data-tab-content class="services-about__items active">
+                                <div class="services-about__image">
+                                    <img src="./images/services-about__img.png" alt="services img">
+                                </div>
+                                <div class="services-about__text">
+                                    <h6>
+                                        AR TEXNOLOGIYASIDAN FOYDALANGAN HOLDA O‘Z YAQINLARINGIZNI HAYRATDA
+                                        QOLDIRADIGAN VA TAKRORLANMAS SOVG‘ALARNI KASHF QILING VA ULARNI LOL QOLDIRING
+                                    </h6>
+                                </div>
                             </div>
-                            <div class="services-about__text">
-                                <h6>
-                                    1.Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, voluptas?
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, voluptas?
-                                </h6>
+                            <div id="legal" data-tab-content class="services-about__items">
+                                <div class="services-about__image">
+                                    <img height="300px" width="auto" src="./images/main-section__img_1.png" alt="services img">
+                                </div>
+                                <div class="services-about__text">
+                                    <h6>
+                                        O'Z BILIMLARINGIZNI AR TEXNOLOGIYASIDAN FOYDALANILGAN HOLDA TA'LIM BERISH SIFATINI
+                                        OSHIRISH IMKONIYATINI YARATING
+                                    </h6>
+                                </div>
                             </div>
-                        </div>
-                        <div id="physical" data-tab-content class="services-about__items">
-                            <div class="services-about__image">
-                                <img src="./images/services-about__img.png" alt="services img">
+                            <div id="physical" data-tab-content class="services-about__items">
+                                <div class="services-about__image">
+                                    <img height="300px" width="auto" src="./images/main-section__img_2.png" alt="services img">
+                                </div>
+                                <div class="services-about__text">
+                                    <h6>
+                                        AR TEXNOLOGIYASI YORDAMIDA TAKRORLANMAS TAQDIMOTLAR TAYYORLASH VA ILMIY YO‘NALISHDA
+                                        TEXNOLOGIYADAN FOYDALANISH IMKONIYATI
+                                    </h6>
+                                </div>
                             </div>
-                            <div class="services-about__text">
-                                <h6>
-                                    2.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nemo 
-                                    pariaturad minus exercitationem. Dolor aliquid omnis voluptas eum aut.
-                                </h6>
+                            <div id="education" data-tab-content class="services-about__items">
+                                <div class="services-about__image">
+                                    <img height="300px" width="auto" src="./images/main-section__img_3.png" alt="services img">
+                                </div>
+                                <div class="services-about__text">
+                                    <h6>
+                                        AR TEXNOLOGIYASIDAN FOYDALANILGAN HOLDA O‘Z YAQINLARINGIZNI HAYRATDA
+                                        QOLDIRADIGAN VA TAKRORLANMAS SOVG‘ALARNI KASHF QILIN VA ULARNI LOL QOLDIRING
+                                    </h6>
+                                </div>
                             </div>
-                        </div>
-                        <div id="education" data-tab-content class="services-about__items">
-                            <div class="services-about__image">
-                                <img src="./images/services-about__img.png" alt="services img">
+                            <div id="frilanser" data-tab-content class="services-about__items">
+                                <div class="services-about__image">
+                                    <img height="300px" width="auto" src="./images/main-section__img_4.png" alt="services img">
+                                </div>
+                                <div class="services-about__text">
+                                    <h6>
+                                        DIZAYNERLAR UCHUN VEB PLATFORMADAN FOYDALANILGAN HOLDA YANGI G‘OYALI VEB SAYT
+                                        DIZAYNLARINI ISHLAB CHIQING VA O‘Z MIJOZLARINGIZGA O‘ZGACHA YONDASHUV BILAN
+                                        YANGI YO‘NALISHNI TARG‘IB ETING
+                                    </h6>
+                                </div>
                             </div>
-                            <div class="services-about__text">
-                                <h6>
-                                    3.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quis 
-                                    tempore dolor tenetur explicabo quaerat qui molestiae iusto culpa quae in 
-                                    excepturi recusandae, atque itaque nobis, neque ratione molestias! Totam.
-                                </h6>
-                            </div>
-                        </div>
-                        <div id="frilanser" data-tab-content class="services-about__items">
-                            <div class="services-about__image">
-                                <img src="./images/services-about__img.png" alt="services img">
-                            </div>
-                            <div class="services-about__text">
-                                <h6>
-                                    4.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quis 
-                                </h6>
-                            </div>
-                        </div>
-                        <div id="marceting" data-tab-content class="services-about__items">
-                            <div class="services-about__image">
-                                <img src="./images/services-about__img.png" alt="services img">
-                            </div>
-                            <div class="services-about__text">
-                                <h6>
-                                    5.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quis 
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quis 
-                                </h6>
+                            <div id="marceting" data-tab-content class="services-about__items">
+                                <div class="services-about__image">
+                                    <img height="300px" width="auto" src="./images/main-section__img_5.png" alt="services img">
+                                </div>
+                                <div class="services-about__text">
+                                    <h6>
+                                        MARKETING YANGI KO‘RINISHIDAN FOYDALANILGAN HOLDA O‘Z FAOLIYATINGIZNI RIVOJLANTIRING
+                                        HAMDA MARKETING SOHASIDAGI YANGI TEXNOLOGIYALARDAN FOYDALANING
+                                    </h6>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    <!-- /Services section -->
+        <!-- /Services section -->
             
-        <!-- Lovation section -->
+        <!-- Location section -->
             <div class="container">
-                <div class="location" id="location">
+                <div class="location link" id="location-section">
                     <div class="section-title location__title">
                         BOG'LANISH
                     </div>
@@ -292,7 +295,7 @@
         <!-- /Location section -->
 
         <!-- Contact section -->
-            <div class="contact" id="contact-section">
+            <div class="contact link" id="contact-section">
                 <div class="container">
                     <div class="contact-section">
                         <div class="section-title contact-section__title">
@@ -393,45 +396,23 @@
             </div>
         <!-- Footer section -->
 
-
-
         <script src="./js/nav.js"></script> <!-- Connect JS navbar -->
         <script src="./js/jquery-3.6.0.min.js"></script> <!-- Connect JS slider -->
         <script src="./js/slick.min.js"></script> <!-- Connect JS slider -->
         <script src="./js/services-tabs_menu.js" defer></script> <!-- Connect JS Tabs menu -->
-        
-        <!-- AR slide section -->
+        <script src="./js/ar-slide.js"></script> <!-- Connect JS AR slide section -->
+        <script src="./js/services-items.js"></script> <!-- Connect JS Services items -->
+        <script src="./js/navbar-scroll-color.js"></script> <!-- Connect JS Position on Scroll -->
+
         <script>
-            $(document).ready(function(){
-                // section silck
-                $('.homeslider').slick({
-                    dots: true, // bottom - button
-                    arrows: true, // right/left - button
-                // section silck
-                
-                // auto slide
-                    autoplay: true,
-                    autoplaySpeed: 3000
-                // /auto slide
-                });
+            addEventListener('fetch', event => {
+                event.respondWith(async function () {
+                    const response = await fetch(event.request);
+                    event.waitUntil(processResponseForTwoSeconds(response));
+                    return response;
+                }());
             });
         </script>
-        <!-- /AR slide section -->
 
-        <!-- Header section -->
-        <!-- <script>
-            $(document).on('click', '.main-navigation__items .main-navigation__item', function(){
-                $(this).addClass('active').siblings().removeClass('active')
-            })
-        </script> -->
-        <!-- /Header section -->
-
-        <!-- Services section -->
-        <script>
-            $(document).on('click', '.services-items .services-item', function(){
-                $(this).addClass('active_services').siblings().removeClass('active_services')
-            })
-        </script>
-        <!-- /Services section -->
     </body>
 </html>

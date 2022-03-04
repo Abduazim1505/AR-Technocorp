@@ -1,6 +1,7 @@
-/* /main section */
+/* main section styles */
+
 .main-section {
-    padding: 15rem 0 10rem 0;
+    padding: 10rem 0 8rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,10 +38,10 @@
 .main__action {
     margin-top: 0.8rem;
 }
-/* main section */
 
 
-/* Instruction section */
+/* Instruction section styles */
+
 .instruction {
     background-color: #EDF4FF;
     padding: 7rem 0;
@@ -74,18 +75,17 @@
     position: relative;
     display: inline-block;
     margin-bottom: 0.5rem;
-    margin-top: 4rem; /* 5 / 16 = 0.32rem */
-    font-size: 1.5rem; /* 36 / 16 = 2.25rem */
+    margin-top: 4rem;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 30px;
-    text-transform: capitalize;
     color: #0062DB;
     left: 40px;
 }
-/* /Instruction section */
 
 
-/* AR portfolio section */
+/* Portfolio section styles */
+
 .ar-portfolio {
     padding: 6rem 0;
 }
@@ -94,7 +94,8 @@
     text-align: center;
 }
 
-    /* AR portfolio section slider */
+    /* Portfolio section slider styles */
+
     .ar-slide-container {
         display: flex;
         justify-content: center;
@@ -119,12 +120,10 @@
         width: 100%;
         height: 500px;
     }
-    /* /AR portfolio section slider */
-
-/* /AR portfolio section */
 
 
-/* Services section */
+/* Services section styles */
+
 .services {
     background-color: #EDF4FF;
 }
@@ -185,6 +184,12 @@
     padding: 70px 0 20px 0;
 }
 
+.services-about__image img {
+    height: 300px;
+    width: auto;
+    border: 15px;
+}
+
 .services-about__text {
     text-align: center;
     padding: 40px 0 40px 0;
@@ -207,10 +212,10 @@
 .active[data-tab-content] {
     display: block;
 }
-/* /Services section */
 
 
-/* Location section */
+/* Location section styles */
+
 .location {
     padding: 7rem 0;
 }
@@ -262,10 +267,10 @@
 .location-section__items a:hover {
     color: #0062DB;
 }
-/* /Location section */
 
 
-/* Contact section */
+/* Contact section styles */
+
 .contact {
     background-color: #EDF4FF;
 }
@@ -411,11 +416,13 @@
 .contact-register__social h5 {
     font-size: 0.7rem;
 }
-/* /Contact section */
+
 
 @media only screen and (max-width: 1280px) {
 
-    /* Main secion */
+
+    /* main section styles */
+
     .main-section {
         display: block;
         text-align: center;
@@ -440,9 +447,11 @@
         width: 100%;
     }
 
-    /* Instruction section */
+
+    /* Instruction section styles */
+
     .instruction {
-        padding: 3rem;
+        padding: 6rem 3rem 3rem 3rem;
         text-align: center;
         justify-content: center;
         margin: 0 auto;
@@ -471,11 +480,11 @@
     .instruction-section__title {
         text-align: center;
     }
-    /* /Instruction section */
 
-    /* Services sectiom */
+    /* Services section styles */
+
     .services-section {
-        padding: 4rem 0 5rem 0;
+        padding: 6rem 0 4rem 0;
     }
 
     .services-about {
@@ -498,16 +507,16 @@
         width: 80%;
         margin: 0 auto;
     }
-    /* /Services sectiom */
 
 
-    /* Contact section */
+    /* Contact section styles */
+
     .contact {
         background-color: none;
     }
 
     .contact-section {
-        padding: 3rem 0;
+        padding: 6rem 0;
     }
 
     .contact-form {
@@ -539,169 +548,49 @@
         margin: 0 auto;
         padding: 0 0 3rem 0;
     }
-    /* /Contact section */
 
 }
 
 @media only screen and (max-width: 991px) {
-    /* Main secion */
-    .main-section {
-        display: block;
-        text-align: center;
-        padding: 9rem 0rem 6rem 0;
-    }
+
+
+    /* main section styles */
 
     .main-section img {
         width: 90%;
     }
 
-    .main-section__info p {
-        text-align: center;
-        margin: 0 auto;
-        padding: 1rem 0;
-    }
-
-    .main-section__title {
-        text-align: center;
-    } 
     
-    .main-section > div {
-        width: 100%;
-    }
-    /* /Main secion */
+    /* Portfolio section styles */
 
-    /* Instruction section */
-    .instruction {
-        padding: 3rem;
-        text-align: center;
-        justify-content: center;
-        margin: 0 auto;
-    }
-
-    .instruction-section__main {
-        display: block;
-        text-align: center;
-    }
-
-    .section-subtitle {
-        position: static;
-        padding: 0 0 1rem 0;
-        text-align: center;
-    }
-
-    .instruction-section__image img {
-        width: 80%;
-    }
-
-    .instruction-section__iframe iframe {
-        display: flex;
-        margin: 3rem auto;
-    }
-
-    .instruction-section__title {
-        text-align: center;
-    }
-    /* /Instruction section */
-
-    /* Ar portfolio section */
     .slide__iframe iframe{
         width: 100%;
         height: 240px;
     }
 
-    .ar-portfolio {
-        padding: 2rem 0 4rem 0;
-    }
-    /* Ar portfolio section */
 
-    /* Services sectiom */
-    .services-section {
-        padding: 4rem 0 5rem 0;
-    }
-
-    .services-about {
-        margin-top: 35px;
-    }
-
-    .services-items {
-        flex-wrap: wrap;
-    }
-
-    .services-item {
-        flex-basis: 49%;
-    }
-    .services-items a {
-        display: block;
-        margin: 1rem  0;
-    }
-
-    .services-about__text {
-        width: 80%;
-        margin: 0 auto;
-    }
-    /* /Services sectiom */
-
-    /* Location section */
-    .location {
-        padding: 3rem;
-    }
+    /* Location section styles */
 
     .location-section {
         display: block;
         padding: 2rem 0 0 0;
     }
-    /* Location section */
-
-    /* Contact section */
-    .contact {
-        background-color: none;
-    }
-
-    .contact-section {
-        padding: 3rem 0;
-    }
-
-    .contact-form {
-        display: block;
-    }
-
-    .contact-form__items {
-        padding: 0.5rem 0;
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .contact-register__title {
-        padding: 2rem 0 0.5rem 0;
-    }
-
-    .contact-register p {
-        padding: 1rem 0 2rem 0;
-    }
-
-    .contact-register {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .contact-section__title {
-        width: 80%;
-        margin: 0 auto;
-        padding: 0 0 3rem 0;
-    }
-    /* /Contact section */
 }
 
 @media only screen and (max-width: 767px) {
 
-    /* Main section */
+
+    /* main section styles */
+
     .main__description {
         font-size: 0.9rem;
     }
-    /* Main section */
 
-    /* Contact section */
-    .contact-form__items form{
+
+    /* Contact section styles */
+
+    .contact-form__items form {
+        margin: 0;
         padding: 1rem;
     }
 
@@ -738,9 +627,10 @@
     .contact-register__title {
         font-size: 16px;
     }
-    /* Contact section */
 
-    /* Location section */
+
+    /* Location section styles */
+
     .location-section__items i {
         padding: 0 20px 0 0;
     }
@@ -752,15 +642,10 @@
     .location-section__items a {
         font-size: 1rem;
     }
-    /* Location section */
 
-    /* Instruction section */
-    .instruction {
-        padding: 3rem 0;
-    }
-    /* Instruction section */
 
-    /* Services section */
+    /* Services section styles */
+
     .section-subtitle {
         font-size: 1.2rem;
     }
@@ -776,6 +661,4 @@
     .services-items {
         margin: 2rem 0 1rem 0;
     }
-    /* /Services section */
-    
 }
